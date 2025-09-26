@@ -1,6 +1,6 @@
 // Replace with your Supabase project details
 const SUPABASE_URL = "https://gzrlhndodjdoegumkauu.supabase.co";
-const SUPABASE_KEY = "YOUR_ANON_KEY";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd6cmxobmRvZGpkb2VndW1rYXV1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc4MzMyNDUsImV4cCI6MjA3MzQwOTI0NX0.7Xs6U_tvshU-Nm3n5g_NBABPl7_r5kymT3_zWv-lMrk";
 
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 

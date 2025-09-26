@@ -1,4 +1,5 @@
-// Replace with your Supabase project details
+// script.js
+
 const SUPABASE_URL = "https://gzrlhndodjdoegumkauu.supabase.co";
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd6cmxobmRvZGpkb2VndW1rYXV1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc4MzMyNDUsImV4cCI6MjA3MzQwOTI0NX0.7Xs6U_tvshU-Nm3n5g_NBABPl7_r5kymT3_zWv-lMrk";
 
@@ -11,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let phoneNumber = "";
 
-  // Step 1: Request OTP
   loginForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     phoneNumber = document.getElementById("phone-number").value.trim();
@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     otpForm.classList.remove("hidden");
   });
 
-  // Step 2: Verify OTP
   otpForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     const otp = document.getElementById("otp-code").value.trim();
@@ -56,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       status.textContent = `Login successful ✅ Welcome ${phoneNumber}`;
       otpForm.classList.add("hidden");
+      // Next: redirect to chat or main UI
     }
   });
 });
